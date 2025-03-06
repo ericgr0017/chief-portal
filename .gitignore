@@ -1,0 +1,4 @@
+node_modules
+.next
+.env # if you have environment files
+.env.local # if you have local env files
