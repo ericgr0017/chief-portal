@@ -1,8 +1,12 @@
-"use client";
-
 import DashboardLayout from '@/components/dashboard/DashboardLayout';
 
-export default function DepartmentDetailPage({ params }: { params: { id: string } }) {
+interface PageProps {
+  params: {
+    id: string;
+  };
+}
+
+export default function DepartmentDetailPage({ params }: PageProps) {
   // In a real application, you would fetch the department data based on the ID
   const departmentId = params.id;
   
