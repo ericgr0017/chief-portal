@@ -6,17 +6,28 @@ import { useEffect, useState } from 'react';
 export default function Dashboard() {
   // 1. State to store today's follow-ups
   const [todaysFollowups, setTodaysFollowups] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   // 2. Fetch today's follow-ups on mount
   useEffect(() => {
     // Example fetch; replace with real data call or your chosen approach
+    setIsLoading(true);
     fetch('/api/outreach/todaysFollowups')
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('Failed to fetch follow-ups');
+        }
+        return res.json();
+      })
       .then((data) => {
         setTodaysFollowups(data);
+        setIsLoading(false);
       })
       .catch((err) => {
         console.error('Error fetching todaysFollowups:', err);
+        setError(err.message);
+        setIsLoading(false);
       });
   }, []);
 
