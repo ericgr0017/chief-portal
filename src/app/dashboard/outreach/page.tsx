@@ -12,6 +12,7 @@ export default function OutreachPage() {
     status: '',
     followupDate: '',
     notes: '',
+    officerCount: '0', // Add officer count for quote generation
   });
 
   // Add state for errors
@@ -21,8 +22,15 @@ export default function OutreachPage() {
     contactMethod: '',
     status: '',
     followupDate: '',
+    officerCount: '', // Add error for officer count
     // etc. for other fields if needed
   });
+
+  // Add state for quote modal
+  const [showQuoteModal, setShowQuoteModal] = useState(false);
+  const [generatedQuote, setGeneratedQuote] = useState('');
+  const [isGeneratingQuote, setIsGeneratingQuote] = useState(false);
+  const [quoteError, setQuoteError] = useState('');
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -76,20 +84,61 @@ export default function OutreachPage() {
     return dueDate < today;
   };
 
-  // 1. Create a function that actually does something on click
-  function handleGenerateQuote() {
-    // Option A: Call an API directly
-    // fetch('/api/quotes', { method: 'POST', body: JSON.stringify({ data: 'example' }) })
-    //   .then(res => res.json())
-    //   .then(result => alert(`Quote created: ${result.message}`))
-    //   .catch(err => console.error(err));
+  // Function to generate a quote
+  const handleGenerateQuote = async () => {
+    // Validate required fields for quote generation
+    if (!formData.department || !formData.contactPerson) {
+      setQuoteError('Department and Contact Person are required to generate a quote.');
+      return;
+    }
 
-    // Option B: Navigate to a dedicated page for quote creation
-    // window.location.href = '/dashboard/admin/create-quote';
+    if (!formData.officerCount || parseInt(formData.officerCount) <= 0) {
+      setQuoteError('Please enter a valid number of officers.');
+      return;
+    }
 
-    // For now, just an example placeholder:
-    alert('Generate quote clicked! (placeholder)');
-  }
+    setIsGeneratingQuote(true);
+    setQuoteError('');
+
+    try {
+      const response = await fetch('/api/quotes/generate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          department: formData.department,
+          contactPerson: formData.contactPerson,
+          officerCount: formData.officerCount,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setGeneratedQuote(data.quote);
+        setShowQuoteModal(true);
+      } else {
+        setQuoteError(data.message || 'Failed to generate quote. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error generating quote:', error);
+      setQuoteError('An error occurred while generating the quote. Please try again.');
+    } finally {
+      setIsGeneratingQuote(false);
+    }
+  };
+
+  // Function to download the quote as a text file
+  const handleDownloadQuote = () => {
+    const element = document.createElement('a');
+    const file = new Blob([generatedQuote], { type: 'text/plain' });
+    element.href = URL.createObjectURL(file);
+    element.download = `Quote_${formData.department.replace(/\s+/g, '_')}_${new Date().toISOString().split('T')[0]}.txt`;
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
+  };
 
   return (
     <DashboardLayout>
@@ -305,10 +354,15 @@ export default function OutreachPage() {
                   <input
                     type="number"
                     id="officerCount"
+                    name="officerCount"
+                    value={formData.officerCount}
+                    onChange={handleInputChange}
                     min="1"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-                    placeholder="Enter number of officers"
+                    className="w-full p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                   />
+                  {formErrors.officerCount && (
+                    <p className="mt-1 text-sm text-red-600">{formErrors.officerCount}</p>
+                  )}
                 </div>
                 
                 <div>
@@ -400,10 +454,11 @@ export default function OutreachPage() {
                 </button>
                 <button
                   type="button"
-                  className="flex-1 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-150"
                   onClick={handleGenerateQuote}
+                  disabled={isGeneratingQuote}
+                  className="flex-1 bg-police-blue hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 >
-                  Generate Quote
+                  {isGeneratingQuote ? 'Generating...' : 'Generate Quote'}
                 </button>
               </div>
             </form>
@@ -672,6 +727,44 @@ export default function OutreachPage() {
           </div>
         </div>
       </div>
+
+      {/* Quote Modal */}
+      {showQuoteModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg shadow-xl p-6 max-w-2xl w-full max-h-[80vh] overflow-y-auto">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-bold text-gray-800">Generated Quote</h2>
+              <button 
+                onClick={() => setShowQuoteModal(false)}
+                className="text-gray-500 hover:text-gray-700"
+              >
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            
+            <div className="bg-gray-50 p-4 rounded-lg mb-4 whitespace-pre-wrap font-mono text-sm">
+              {generatedQuote}
+            </div>
+            
+            <div className="flex justify-end space-x-3">
+              <button 
+                onClick={() => setShowQuoteModal(false)}
+                className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded"
+              >
+                Close
+              </button>
+              <button 
+                onClick={handleDownloadQuote}
+                className="bg-police-blue hover:bg-blue-700 text-white font-medium py-2 px-4 rounded"
+              >
+                Download Quote
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </DashboardLayout>
   );
 } 
