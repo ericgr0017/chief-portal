@@ -1,0 +1,97 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String?
+  image     String?
+  department String
+  role      String   @default("user")
+  points    Int      @default(0)
+  rank      String   @default("Rookie")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Department {
+  id          String   @id @default(cuid())
+  name        String
+  contactName String
+  contactEmail String
+  status      String   @default("pending")
+  notes       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model OutreachActivity {
+  id             String           @id @default(cuid())
+  type           String           // email, call, meeting, signup
+  userId         String
+  departmentId   String
+  notes          String?
+  points         Int              @default(0)
+  createdAt      DateTime         @default(now())
+  user           User             @relation(fields: [userId], references: [id])
+  department     Department       @relation(fields: [departmentId], references: [id])
+}
+
+model Achievement {
+  id             String           @id @default(cuid())
+  name           String
+  description    String
+  icon           String
+  pointsAwarded  Int              @default(0)
+  requirement    String
+  createdAt      DateTime         @default(now())
+  users          UserAchievement[]
+}
+
+model UserAchievement {
+  id             String           @id @default(cuid())
+  userId         String
+  achievementId  String
+  awardedAt      DateTime         @default(now())
+  user           User             @relation(fields: [userId], references: [id])
+  achievement    Achievement      @relation(fields: [achievementId], references: [id])
+
+  @@unique([userId, achievementId])
+}
+
+model Challenge {
+  id             String           @id @default(cuid())
+  title          String
+  description    String
+  reward         String
+  pointsAwarded  Int              @default(0)
+  startDate      DateTime
+  endDate        DateTime
+  isActive       Boolean          @default(true)
+  createdAt      DateTime         @default(now())
+  participants   UserChallenge[]
+}
+
+model UserChallenge {
+  id             String           @id @default(cuid())
+  userId         String
+  challengeId    String
+  progress       Int              @default(0)
+  completed      Boolean          @default(false)
+  joinedAt       DateTime         @default(now())
+  completedAt    DateTime?
+  user           User             @relation(fields: [userId], references: [id])
+  challenge      Challenge        @relation(fields: [challengeId], references: [id])
+
+  @@unique([userId, challengeId])
+} 
