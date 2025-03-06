@@ -1,14 +1,12 @@
+"use client";
+
+import { useParams } from 'next/navigation';
 import DashboardLayout from '@/components/dashboard/DashboardLayout';
 
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
-
-export default function DepartmentDetailPage({ params }: PageProps) {
-  // In a real application, you would fetch the department data based on the ID
-  const departmentId = params.id;
+export default function DepartmentDetailPage() {
+  // Use the useParams hook to get the id parameter
+  const params = useParams();
+  const departmentId = params.id as string;
   
   return (
     <DashboardLayout>
