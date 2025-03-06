@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
 
@@ -99,7 +101,7 @@ const AchievementsWidget: React.FC = () => {
                 
                 {achievement.completed ? (
                   <p className="text-xs text-gray-400">
-                    Completed on {new Date(achievement.date).toLocaleDateString()}
+                    Completed on {achievement.date ? new Date(achievement.date).toLocaleDateString() : 'Unknown date'}
                   </p>
                 ) : (
                   <div className="w-full bg-gray-200 rounded-full h-1.5">
