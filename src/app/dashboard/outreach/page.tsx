@@ -111,7 +111,7 @@ export default function OutreachPage() {
   };
 
   // Function to generate a sample quote
-  const handleSeeSampleQuote = () => {
+  const handleSeeSampleQuote = async () => {
     setIsGeneratingQuote(true);
     setQuoteError('');
 
@@ -123,30 +123,38 @@ export default function OutreachPage() {
       universityId: formData.universityId // Use the selected university
     };
 
-    // Call the API with sample data
-    fetch('/api/quotes/generate', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(sampleData),
-    })
-      .then(response => response.json())
-      .then(data => {
-        if (data.success) {
-          setGeneratedQuote(data.quote);
-          setShowQuoteModal(true);
-        } else {
-          setQuoteError(data.message || 'Failed to generate sample quote. Please try again.');
-        }
-      })
-      .catch(error => {
-        console.error('Error generating sample quote:', error);
-        setQuoteError('An error occurred while generating the sample quote. Please try again.');
-      })
-      .finally(() => {
-        setIsGeneratingQuote(false);
+    try {
+      console.log('Sending request to generate sample quote with data:', sampleData);
+      
+      const response = await fetch('/api/quotes/generate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(sampleData),
       });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error('Error response from server:', response.status, errorText);
+        throw new Error(`Server responded with ${response.status}: ${errorText}`);
+      }
+
+      const data = await response.json();
+      console.log('Sample quote generated successfully:', data);
+
+      if (data.success) {
+        setGeneratedQuote(data.quote);
+        setShowQuoteModal(true);
+      } else {
+        setQuoteError(data.message || 'Failed to generate sample quote. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error generating sample quote:', error);
+      setQuoteError(`An error occurred while generating the sample quote: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    } finally {
+      setIsGeneratingQuote(false);
+    }
   };
 
   // Function to generate a quote
@@ -171,6 +179,13 @@ export default function OutreachPage() {
     setQuoteError('');
 
     try {
+      console.log('Sending request to generate quote with data:', {
+        department: formData.department,
+        contactPerson: formData.contactPerson,
+        officerCount: formData.officerCount,
+        universityId: formData.universityId
+      });
+      
       const response = await fetch('/api/quotes/generate', {
         method: 'POST',
         headers: {
@@ -184,7 +199,14 @@ export default function OutreachPage() {
         }),
       });
 
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error('Error response from server:', response.status, errorText);
+        throw new Error(`Server responded with ${response.status}: ${errorText}`);
+      }
+
       const data = await response.json();
+      console.log('Quote generated successfully:', data);
 
       if (data.success) {
         setGeneratedQuote(data.quote);
@@ -194,7 +216,7 @@ export default function OutreachPage() {
       }
     } catch (error) {
       console.error('Error generating quote:', error);
-      setQuoteError('An error occurred while generating the quote. Please try again.');
+      setQuoteError(`An error occurred while generating the quote: ${error instanceof Error ? error.message : 'Unknown error'}`);
     } finally {
       setIsGeneratingQuote(false);
     }

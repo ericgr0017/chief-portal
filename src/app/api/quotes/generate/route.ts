@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
   // Calculate total cost example
   const rawCount = Number(formData.officerCount ?? 0);
   const costPerOfficer = 450;
-  const totalCost = (rawCount * costPerOfficer).toString();
+  const totalCost = (rawCount * costPerOfficer).toFixed(2);
   
   // Format the date
   const today = new Date();
@@ -68,23 +68,13 @@ Thank you for your interest in our certificate program. We are pleased to provid
 
 ITEM DESCRIPTION                                                   QTY    UNIT PRICE    AMOUNT
 -------------------------------------------------------------------------------
-Certificate Program: Operational Readiness for Police Officers -   {{officerCount}}    $${costPerOfficer}.00    ${{totalCost}}.00
+Certificate Program: Operational Readiness for Police Officers -   {{officerCount}}    $${costPerOfficer}.00    ${{totalCost}}
 Practical Strategies for Addressing Opioid Use Disorder and 
 Co-occurring Conditions
 
-                                                                   SUBTOTAL:    ${{totalCost}}.00
+                                                                   SUBTOTAL:    ${{totalCost}}
                                                                    TAX:         $0.00
-                                                                   TOTAL:       ${{totalCost}}.00
-
-PROGRAM DETAILS:
-• 2-day intensive training (16 hours total)
-• On-site at your department or preferred facility
-• All officers will receive official certification upon completion
-• Evidence-based training on opioid response protocols
-• Hands-on experience with naloxone administration
-• De-escalation techniques for individuals in crisis
-• Community resource coordination strategies
-• Post-incident support and officer wellness components
+                                                                   TOTAL:       ${{totalCost}}
 
 TERMS & CONDITIONS:
 Subject to Receipt of Opioid Settlement Disbursement Funding.
