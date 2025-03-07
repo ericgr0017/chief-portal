@@ -45,22 +45,40 @@ export async function POST(request: NextRequest) {
   const formattedAddress = `${university.address.street}${university.address.unit ? ', ' + university.address.unit : ''}
 ${university.address.city}, ${university.address.state} ${university.address.zip}`;
 
+  // ASCII art for Seton Hall
+  const setonHallAscii = `
+  ╔═══════════════════════════════════════════════════════════════════════════╗
+  ║                                                                           ║
+  ║   ███████╗███████╗████████╗ ██████╗ ███╗   ██╗    ██╗  ██╗ █████╗ ██╗     ██╗     ║
+  ║   ██╔════╝██╔════╝╚══██╔══╝██╔═══██╗████╗  ██║    ██║  ██║██╔══██╗██║     ██║     ║
+  ║   ███████╗█████╗     ██║   ██║   ██║██╔██╗ ██║    ███████║███████║██║     ██║     ║
+  ║   ╚════██║██╔══╝     ██║   ██║   ██║██║╚██╗██║    ██╔══██║██╔══██║██║     ██║     ║
+  ║   ███████║███████╗   ██║   ╚██████╔╝██║ ╚████║    ██║  ██║██║  ██║███████╗███████╗║
+  ║   ╚══════╝╚══════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═══╝    ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝║
+  ║                                                                           ║
+  ║                    STILLMAN SCHOOL OF BUSINESS                            ║
+  ║                                                                           ║
+  ╚═══════════════════════════════════════════════════════════════════════════╝
+`;
+
   // Example template (you can store this in a DB or a file):
-  const quoteTemplate = `
-                      OFFICIAL PRICE QUOTATION
+  const quoteTemplate = `${setonHallAscii}
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                        OFFICIAL PRICE QUOTATION                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝
 
 ${university.name}
 ${university.school}
 ${formattedAddress}
 ${university.contactPhone} | ${university.contactEmail}
 
-================================================================================
+╔═══════════════════════════════════════════════════════════════════════════╗
+║ QUOTE NUMBER: ${quoteNumber}
+║ DATE: ${formattedDate}
+║ VALID UNTIL: ${formattedExpirationDate}
+╚═══════════════════════════════════════════════════════════════════════════╝
 
-QUOTE NUMBER: ${quoteNumber}
-DATE: ${formattedDate}
-VALID UNTIL: ${formattedExpirationDate}
-
---------------------------------------------------------------------------------
 TO:
 {{contactPerson}}
 {{department}}
@@ -72,9 +90,9 @@ Practical Strategies for Addressing Opioid Use Disorder" training program.
 
 We are pleased to provide you with the following quotation:
 
---------------------------------------------------------------------------------
-PROGRAM DETAILS
---------------------------------------------------------------------------------
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                             PROGRAM DETAILS                               ║
+╚═══════════════════════════════════════════════════════════════════════════╝
 
 PROGRAM:       Operational Readiness for Police Officers
 DURATION:      2-day intensive training (16 hours total)
@@ -82,9 +100,9 @@ LOCATION:      On-site at your department or preferred facility
 CERTIFICATION: All officers will receive official certification upon completion
 PROVIDER:      ${university.name}, ${university.school}
 
---------------------------------------------------------------------------------
-PRICING BREAKDOWN
---------------------------------------------------------------------------------
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                           PRICING BREAKDOWN                               ║
+╚═══════════════════════════════════════════════════════════════════════════╝
 
 Number of Officers:    {{officerCount}}
 Cost per Officer:      $${costPerOfficer}.00
@@ -93,17 +111,17 @@ Cost per Officer:      $${costPerOfficer}.00
                                       DISCOUNT:  $0.00
                                          TOTAL:  ${{totalCost}}.00
 
---------------------------------------------------------------------------------
-FUNDING INFORMATION
---------------------------------------------------------------------------------
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                          FUNDING INFORMATION                              ║
+╚═══════════════════════════════════════════════════════════════════════════╝
 
 This program qualifies for 100% funding through Opioid Settlement Funds,
 including officer overtime costs. Our team will assist with all necessary
 documentation for funding approval.
 
---------------------------------------------------------------------------------
-PROGRAM BENEFITS
---------------------------------------------------------------------------------
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                            PROGRAM BENEFITS                               ║
+╚═══════════════════════════════════════════════════════════════════════════╝
 
 • Evidence-based training on opioid response protocols
 • Hands-on experience with naloxone administration
@@ -123,7 +141,11 @@ Dr. Joyce Strawser
 Dean, ${university.school}
 ${university.name}
 
-================================================================================
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                                                                           ║
+║                © ${new Date().getFullYear()} ${university.name}                                ║
+║                                                                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝
 `;
 
   // Build the data object that matches your placeholders in the template

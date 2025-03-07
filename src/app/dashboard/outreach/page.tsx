@@ -853,7 +853,7 @@ export default function OutreachPage() {
               </button>
             </div>
             
-            <div className="bg-white border border-gray-300 rounded-lg p-8 mb-4 whitespace-pre-wrap font-mono text-sm">
+            <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-8 mb-4">
               {/* University Logo */}
               {selectedUniversity && (
                 <div className="flex justify-center mb-6">
@@ -869,7 +869,9 @@ export default function OutreachPage() {
               )}
               
               {/* Quote Content */}
-              {generatedQuote}
+              <pre className="whitespace-pre-wrap font-mono text-sm text-blue-900 overflow-x-auto">
+                {generatedQuote}
+              </pre>
             </div>
             
             <div className="flex justify-end space-x-3">
