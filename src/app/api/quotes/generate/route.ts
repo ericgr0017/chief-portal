@@ -1,8 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { fillTemplate } from '@/utils/fillTemplate';
+import { getUniversityById } from '@/data/universities';
 
 export async function POST(request: NextRequest) {
   const formData = await request.json();
+
+  // Get university information (default to Seton Hall if not specified)
+  const universityId = formData.universityId || 'seton-hall';
+  const university = getUniversityById(universityId);
+  
+  if (!university) {
+    return NextResponse.json({
+      success: false,
+      message: `University with ID "${universityId}" not found.`
+    }, { status: 404 });
+  }
 
   // Calculate total cost example
   const rawCount = Number(formData.officerCount ?? 0);
@@ -18,7 +30,7 @@ export async function POST(request: NextRequest) {
   });
   
   // Generate a quote number
-  const quoteNumber = `Q-${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(Math.floor(Math.random() * 10000)).padStart(4, '0')}`;
+  const quoteNumber = `${university.id.toUpperCase()}-${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(Math.floor(Math.random() * 10000)).padStart(4, '0')}`;
   
   // Calculate expiration date (30 days from now)
   const expirationDate = new Date(today);
@@ -29,12 +41,21 @@ export async function POST(request: NextRequest) {
     day: 'numeric'
   });
 
+  // Format the university address
+  const formattedAddress = `${university.name}
+${university.school}
+${university.address.street}${university.address.unit ? ', ' + university.address.unit : ''}
+${university.address.city}, ${university.address.state} ${university.address.zip}`;
+
   // Example template (you can store this in a DB or a file):
   const quoteTemplate = `
 =======================================================================
                 OPERATIONAL READINESS TRAINING PROGRAM
                       OFFICIAL PRICE QUOTATION
 =======================================================================
+
+FROM:
+${formattedAddress}
 
 Quote Number: {{quoteNumber}}
 Date: {{date}}
@@ -59,6 +80,7 @@ Training Program: Operational Readiness for Police Officers
 Duration: 2-day intensive training (16 hours total)
 Location: On-site at your department or preferred facility
 Certification: All officers will receive official certification upon completion
+Provider: ${university.name}, ${university.school}
 
 -----------------------------------------------------------------------
 PRICING BREAKDOWN
@@ -89,14 +111,16 @@ PROGRAM BENEFITS
 • Community resource coordination strategies
 • Post-incident support and officer wellness components
 
-To accept this quotation, please contact us at training@chiefportal.org
-or call (555) 123-4567.
+To accept this quotation, please contact us at ${university.contactEmail}
+or call ${university.contactPhone}.
 
 This quote is valid for 30 days from the date of issue.
 
 Sincerely,
 
 The Operational Readiness Training Team
+${university.name}
+${university.school}
 =======================================================================
 `;
 
@@ -117,5 +141,6 @@ The Operational Readiness Training Team
   return NextResponse.json({
     success: true,
     quote: filledQuote,
+    university: university
   });
 } 

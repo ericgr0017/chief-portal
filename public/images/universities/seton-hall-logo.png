@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Content Copyright Seton Hall University -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8">
+  <meta name="Description" id="Description" content="Error 404 Not Found page" />
+  
+  <title>Error 404 Not Found - Seton Hall University</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/fcef897e50.js" crossorigin="anonymous"></script>
+  <!-- Application CSS -->
+  <link rel="stylesheet" type="text/css" href="/_resources/css/app.min.css">
+  <link rel="stylesheet" type="text/css" href="https://use.typekit.net/uio3yve.css" />
+  <!-- Modernizr -->
+  <script src="/_resources/js/modernizr.min.js"></script>
+  <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+  
+</head>
+
+<body><span role="navigation" aria-label="Top of page" id="__topdoc__"></span>
+<section id="pre-header-content" aria-label="pre-header scripts"><!-- Google Tag Manager --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XWZT4" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+<script>
+      (function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-5XWZT4');
+    </script>
+<!-- End Google Tag Manager --><noscript>
+      <div class="alert-box radius data-alert" role="alert">
+        <p>Javascript must be enabled for the correct page display.</p>
+      </div>
+    </noscript><!-- Allow a user to go to the main content of the page -->
+<div class="accessibility"><a tabindex="1" href="#main">Skip to Content</a> <br /><a tabindex="2" href="/sitemap.html">Sitemap for Screen Reader Users</a></div>
+</section>
+<div class="title-bar show-for-small-only">
+<div class="title-bar-left" role="navigation">&nbsp;</div>
+<div class="title-bar-right" role="navigation" aria-label="mobile right navigation"><span class="title-bar-title">Menu</span> <button class="menu-icon" type="button" aria-label="Mobile Navigation" data-open="offCanvasRight"></button></div>
+</div>
+<div id="offCanvasLeft" class="off-canvas position-left " data-off-canvas=""><!-- Your LEFT menu or Off-canvas content goes here --> <button class="exit-off-canvas" aria-label="Close menu" data-toggle="offCanvasLeft">Close &times;</button>
+<div class="search-form"><form role="search" action="/search.html" method="get" name="mobile-site-search" aria-label="mobile-site-search"><input id="mobile-q" name="q" type="text" placeholder="Search" onfocus="document.getElementById('mobile-q').value=''" /> <input class="gsc-search-button" type="submit" value="" /></form></div>
+</div>
+<div id="offCanvasRight" class="off-canvas position-right" data-off-canvas=""><!-- Your RIGHT menu or Off-canvas content goes here -->
+<ul class="vertical menu drilldown" data-drilldown="">
+<li><button class="exit-off-canvas" aria-label="Close menu" data-toggle="offCanvasRight">Close</button></li>
+<li><a href="#">Academics</a>
+<ul class="menu vertical nested">
+<li><label>Academics</label></li>
+<li><a href="#">Academic Programs</a>
+<ul class="menu vertical nested">
+<li><label>Academic Programs</label></li>
+<li><a href="/academics/undergraduate-programs.html" aria-label="Undergraduate Programs mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Undergraduate Programs'});">Undergraduate Programs</a></li>
+<li><a href="/academics/graduate-programs.html" aria-label="Graduate Programs mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Graduate Programs'});">Graduate Programs</a></li>
+<li><a href="/continuing-education/" aria-label="Continuing Education mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Continuing Education'});">Continuing Education</a></li>
+<li><a href="https://online.shu.edu" aria-label="Online Programs mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Online Programs'});">Online Programs</a></li>
+<li><a href="/academics/dual-degrees-and-graduate-programs-at-seton-hall.html" aria-label="Dual Degree Programs mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Dual Degree Programs'});">Dual Degree Programs</a></li>
+<li><a href="/academics/certificate-programs.html" aria-label="Certificate Programs" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Certificate Programs mobile'});">Certificate Programs</a></li>
+<li><a href="/academics/education-specialist-programs.html" aria-label="Special Programs mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Special Programs'});">Special Programs</a></li>
+<li><a title="STEM-Designated Programs mobile" href="/stem-designated-programs.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'STEM-Designated Programs'});">STEM-Designated Programs</a></li>
+<li><a href="/summer/" aria-label="Summer Sessions mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Summer Sessions'});">Summer Sessions</a></li>
+<li><a href="/international-programs/index.html" aria-label="International Programs mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'International Programs'});">International Programs</a></li>
+</ul>
+</li>
+<li><a href="#">Schools and Colleges</a>
+<ul class="menu vertical nested" aria-label="Schools and Colleges">
+<li><label>Schools and Colleges</label></li>
+<li><a href="/arts-sciences/" aria-label="Arts and Sciences mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Arts and Sciences'});">Arts and Sciences</a></li>
+<li><a href="/business/" aria-label="Business mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Business'});">Business</a></li>
+<li><a href="/diplomacy/" aria-label="Diplomacy and International Relations mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Diplomacy and International Relations'});">Diplomacy and International Relations</a></li>
+<li><a href="/health/" aria-label="Health and Medical Sciences mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Health and Medical Services'});">Health and Medical Sciences</a></li>
+<li><a href="/human-development-culture-media/index.html" aria-label="Communication and the Arts mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Communication and the Arts'});">Human Development, Culture, and Media</a></li>
+<li><a href="https://law.shu.edu" aria-label="Law mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Law'});">Law</a></li>
+<li><a href="/nursing/" aria-label="Nursing mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Nursing'});">Nursing</a></li>
+<li><a title="Theology mobile" href="/theology/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Theology'});">Theology</a></li>
+</ul>
+</li>
+<li><a href="#">Additional Resources</a>
+<ul class="menu vertical nested" aria-label="Additional Resources">
+<li><label>Additional Resources</label></li>
+<li><a title="Experiential Learning mobile" href="/provost/experiential-learning/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Experiential Learning'});">Experiential Learning</a></li>
+<li><a title="Advising" href="/advising/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Advising'});">Advising</a></li>
+<li><a title="Faculty mobile" href="/profiles/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Faculty'});">Faculty</a></li>
+<li><a title="Departments mobile" href="/academics/schools-colleges-departments.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Departments'});">Departments</a></li>
+<li><a title="Centers and Institutes mobile" href="/academics/center-institutes.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Centers and Institutes'});">Centers and Institutes</a></li>
+<li><a title="Core Curriculum mobile" href="/core-curriculum/index.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'University Core Curriculum'});">Core Curriculum</a></li>
+<li><a title="University Libraries mobile" href="https://library.shu.edu/library" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'University Libraries'});">University Libraries</a></li>
+<li><a title="Academic Calendar mobile" href="/academics/academic-calendar.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Academic Calendar'});">Academic Calendar</a></li>
+<li><a title="Grants and Research" href="/grants-research-services/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Grants and Research'});">Grants and Research</a></li>
+<li><a title="Office of the Provost mobile" href="/provost/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Office of the Provost'});">Office of the Provost</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Admissions</a>
+<ul class="menu vertical nested">
+<li><label>Admissions</label></li>
+<li><a href="/visit/" aria-label="Visiting Seton Hall information">Visiting Seton Hall</a><br />
+<p style="padding: 0 25px; color: #fefefe;">Tour Schedule<br /><span style="font-size: .75rem;"> Monday - Friday: 10 a.m. and 2 p.m.<br />Saturday: 10 a.m., Noon and 2 p.m.</span></p>
+</li>
+<li><a href="#">Undergraduate Students</a>
+<ul class="menu vertical nested">
+<li><label>Undergraduate Students</label></li>
+<li><a href="/undergraduate-admissions/" aria-label="Admissions Homepage mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Admissions Homepage'});">Admissions Homepage</a></li>
+<li><a href="/undergraduate-admissions/application-checklist.html#application-deadlines" aria-label="Applying as a Freshman mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Applying as a Freshman'});">Applying as a Freshman</a></li>
+<li><a href="/undergraduate-admissions/transfer/index.html" aria-label="Applying as a Transfer mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Applying as a Transfer'});">Applying as a Transfer</a></li>
+<li><a href="/undergraduate-admissions/scholarships.html" aria-label="Scholarships mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Scholarships'});">Scholarships</a></li>
+<li><a href="/undergraduate-admissions/visiting.html" aria-label="On-Campus and Virtual Events mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'On-Campus and Virtual Events'});">On-Campus and Virtual Events</a></li>
+<li><a href="/openhouse/" aria-label="Open House mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Open House'});">Open House</a></li>
+<li><a href="https://app.shu.edu/portal/campus-tour" aria-label="Campus Tours mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Campus Tours'});">Campus Tours (Offered Mon-Sat)</a></li>
+<li><a href="/undergraduate-admissions/find-a-counselor.html" aria-label="Find Your Counselor mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Find Your Counselor'});">Find Your Counselor</a></li>
+</ul>
+</li>
+<li><a href="#">Graduate Students</a>
+<ul class="menu vertical nested">
+<li><a href="/graduate-affairs/index.html" aria-label="Graduate Affairs mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Graduate Affairs'});">Graduate Affairs</a></li>
+<li><a href="/academics/graduate-programs.html" aria-label="Graduate Programs mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Graduate Programs'});">Graduate Programs</a></li>
+<li><a href="/graduate-affairs/contact-us.html" aria-label="Contact Information mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Contact Information'});">Contact Information</a></li>
+<li><a href="/graduate-affairs/applying.html" aria-label="Start/Continue Your Application mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Start/Continue Your Application'});">Start/Continue Your Application</a></li>
+<li><a href="/graduate-affairs/graduate-financial-aid.html" aria-label="Financial Aid and Financing mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Financial Aid and Financing'});">Financial Aid and Financing</a></li>
+<li><a href="/student-services/services-for-graduate-students.html" aria-label="Services for Graduate Students mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Services for Graduate Students'});">Services for Graduate Students</a></li>
+</ul>
+</li>
+<li><a href="#">International Students</a>
+<ul class="menu vertical nested">
+<li><a href="/undergraduate-admissions/international-and-esl-applicants.html" aria-label="Undergraduate Applicants mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Undergraduate Applicants'});">Undergraduate Applicants</a></li>
+<li><a href="/graduate-affairs/international-graduate-applicants.html" aria-label="Graduate Applicants mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Graduate Applicants'});">Graduate Applicants</a></li>
+<li><a href="/international-programs/international-students/incoming-f1-students.html" aria-label="F1 Visa Process mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'F1 Visa Process'});">F1 Visa Process</a></li>
+<li><a href="https://app.shu.edu/portal/international" aria-label="Meet with an International Undergraduate Admissions Counselor mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Meet with an International Undergraduate Admissions Counselor'});">Meet with an International Undergraduate Admissions Counselor</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Catholic Mission</a>
+<ul class="menu vertical nested">
+<li><label>Catholic Mission</label></li>
+<li><a href="#">Catholic Mission</a>
+<ul class="menu vertical nested">
+<li><label>Catholic Mission</label></li>
+<li><a href="/catholic-mission/" aria-label="Mission and Ministry mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Mission and Ministry'});">Mission and Ministry</a></li>
+<li><a href="/catholic-mission/priest-community.html" aria-label="Priest Community mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Priest Community'});">Priest Community</a></li>
+<li><a href="/catholic-mission/catholic-studies.html" aria-label="Catholic Studies mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Catholic Studies'});">Catholic Studies</a></li>
+<li><a href="/theology/" aria-label="School of Theology mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'School of Theology'});">School of Theology</a></li>
+<li><a href="/catholic-intellectual-tradition/" aria-label="Catholic Intellectual Tradition mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Catholic Intellectual Tradition'});">Catholic Intellectual Tradition</a></li>
+</ul>
+</li>
+<li><a href="#">Additional Resources</a>
+<ul class="menu vertical nested">
+<li><label>Additional Resources</label></li>
+<li><a href="/catholic-mission/mass-schedule.html" aria-label="Mass Schedule mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Mass Schedule'});">Mass Schedule</a></li>
+<li><a href="/catholic-mission/centers-institutes.html" aria-label="Catholic Centers and Institutes mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Centers and Institutes'});">Centers and Institutes</a></li>
+<li><a href="/catholic-mission/archdiocese.html" aria-label="Archdiocese mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Archdiocese'});">Archdiocese</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Athletics</a>
+<ul class="menu vertical nested">
+<li><label>Athletics</label></li>
+<li><a href="http://www.shupirates.com/">SHUPirates.com</a></li>
+<li><a href="#" aria-label="Athletics Resources">Athletics Resources</a>
+<ul class="menu vertical nested">
+<li><label>Athletics Resources</label></li>
+<li><a href="https://shupirates.com/calendar" aria-label="Schedules" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Schedules'});">Schedules</a></li>
+<li><a href="https://setonhalltix.com/" aria-label="Tickets" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Tickets'});">Tickets</a></li>
+<li><a href="https://shupirates.com/sports/pirateblue" aria-label="Pirate Blue" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Pirate Blue'});">Pirate Blue</a></li>
+<li><a href="https://shupirates.com/facilities" aria-label="Facilities" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Facilities'});">Facilities</a></li>
+<li><a href="/esports/" aria-label="eSports and Gaming" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'eSports and Gaming'});">eSports and Gaming</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Alumni</a>
+<ul class="menu vertical nested">
+<li><label>Alumni</label></li>
+<li><a href="#" aria-label="Alumni and Friends mobile menu">Alumni and Friends</a>
+<ul class="menu vertical nested">
+<li><label>Alumni and Friends</label></li>
+<li><a href="https://advancement.shu.edu" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Almuni Home'});">Alumni Home</a></li>
+<li><a href="https://advancement.shu.edu/connect/alumni-directory" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Almuni Directory'});">Alumni Directory</a></li>
+<li><a href="https://advancement.shu.edu/connect/class-notes" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Share Your News'});">Share Your News</a></li>
+<li><a href="https://advancement.shu.edu/benefits" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Benefits and Services'});">Benefits and Services</a></li>
+<li><a href="https://advancement.shu.edu/alumni-email" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'E-mail Accounts'});">E-mail Accounts</a></li>
+<li><a href="/registrar/registrar-transcript-requests.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Request an Transcript'});">Request a Transcript</a></li>
+<li><a href="https://advancement.shu.edu/pirate-pride/true-blue" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'True Blue'});">True Blue</a></li>
+</ul>
+</li>
+<li><a href="#" aria-label="Support Seton Hall mobile menu">Support Seton Hall</a>
+<ul class="menu vertical nested">
+<li><label>Support Seton Hall</label></li>
+<li><a href="https://advancement.shu.edu/give/why-give" aria-label="Why Seton Hall mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Why Seton Hall?'});">Why Seton Hall?</a></li>
+<li><a href="https://advancement.shu.edu/give/ways-to-give" aria-label="Ways to Give mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Ways to Give'});">Ways to Give</a></li>
+<li><a href="https://advancement.shu.edu/give/give-online" aria-label="Give Now to Seton" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Give Now'});">Give Now</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">About</a>
+<ul class="menu vertical nested">
+<li><label>About</label></li>
+<li><a href="/about.html" aria-label="About Seton Hall" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'About Seton Hall'});">About Seton Hall</a></li>
+<li><a href="/hallmarks.html" aria-label="hallmarks" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'Hallmarks'});">Hallmarks</a></li>
+<li><a href="/rankings.html" aria-label="rankings" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'Rankings'});">Rankings</a></li>
+<li><a href="/mission.html" aria-label="Mission Statement" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'Mission Statement'});">Mission Statement</a></li>
+<li><a href="/campus-life.html" aria-label="Campus Life" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'Campus Life'});">Campus Life</a></li>
+<li><a href="/diversity-equity-inclusion/index.html" aria-label="Diversity and Inclusion" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'Diversity and Inclusion'});">Diversity and Inclusion</a></li>
+<li><a href="/history.html" aria-label="History" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'History'});">History</a></li>
+<li><a title="Visiting Seton Hall mobile" href="/visit/" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'Visit Seton Hall'});">Visit Seton Hall</a></li>
+<li><a title="Office of the President" href="/president/index.html" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'Office of the President'});">Office of the President</a></li>
+</ul>
+</li>
+<li><a href="https://events.shu.edu" aria-label="Campus Events" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'Events'});">Events</a></li>
+<li><a class="headerLink" href="/piratenet.html" aria-label="PirateNet" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'PirateNet'});">PirateNet</a></li>
+</ul>
+</div>
+<div class="off-canvas-content" data-off-canvas-content="">
+<div class="inner-wrap"><!-- Off Canvas Menu -->
+<div class="w1" role="main"><img class="logo-print" src="/images/university-logo-print.jpg" alt="Seton Hall University" /><header id="header" class="main-header alt" role="banner">
+<div class="row expanded collapse">
+<div class="homeBar bar hide-for-small-only">
+<ul class="top-nav">
+<li><a class="about" title="open About menu" href="#" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'About'});"><span>About</span></a>
+<div class="drop">
+<ul>
+<li><a href="/about.html" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'About Seton Hall'});">About Seton Hall</a></li>
+<li><a title="hallmarks" href="/hallmarks.html" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'Hallmarks'});">Hallmarks</a></li>
+<li><a title="rankings" href="/rankings.html" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'Rankings'});">Rankings</a></li>
+<li><a title="Mission Statement" href="/mission.html" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'Mission Statement'});">Mission Statement</a></li>
+<li><a title="Campus Life" href="/campus-life.html" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'Campus Life'});">Campus Life</a></li>
+<li><a title="Diversity and Inclusion" href="/diversity-equity-inclusion/index.html" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'Diversity and Inclusion'});">Diversity and Inclusion</a></li>
+<li><a title="History" href="/history.html" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'History'});">History</a></li>
+<li class="hide-for-medium-up"><a title="Visiting Seton Hall mobile" href="/visit/" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'Visit Seton Hall'});">Visit Seton Hall</a></li>
+<li><a title="Office of the President" href="/president/index.html" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'Office of the President'});">Office of the President</a></li>
+</ul>
+</div>
+</li>
+<li><a href="https://events.shu.edu" aria-label="Campus Events" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'Events'});">Events</a></li>
+<li><a class="headerLink" title="PirateNet" href="/piratenet.html" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'PirateNet'});">PirateNet</a></li>
+<li><a class="btn-support" title="support Seton Hall" href="https://advancement.shu.edu/give/give-online" onclick="dataLayer.push({ 'event': 'Header Links', 'eventCategory': 'Header Links', 'eventAction': 'click', 'eventLabel': 'Support SHU'});">SUPPORT SHU</a></li>
+<li><form class="search-form" role="search" action="/search.html" method="get" name="site-search" aria-label="site-search-header"><label>University Site Search</label> <input id="q" name="q" type="text" placeholder="Search" onfocus="document.getElementById('q').value=''" /> <input class="gsc-search-button" type="submit" value="" /></form></li>
+</ul>
+</div>
+</div>
+<p class="logo"><a href="/"><img src="/images/university-logo-desktop.png" alt="Seton Hall University" /></a></p>
+<nav id="nav" aria-label="Main Navigation Menu">
+<ul class="main-nav">
+<li><a title="Open Academics menu" href="#">Academics</a>
+<div class="mega-drop">
+<div class="row">
+<div class="medium-4 columns"><strong class="title">Academic Programs</strong>
+<ul>
+<li><a title="Undergraduate Programs" href="/academics/undergraduate-programs.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Undergraduate Programs'});">Undergraduate Programs</a></li>
+<li><a title="Graduate Programs" href="/academics/graduate-programs.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Graduate Programs'});">Graduate Programs</a></li>
+<li><a title="Continuing Education" href="/continuing-education/index.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Continuing Education'});">Continuing Education</a></li>
+<li><a title="Online Programs" href="https://online.shu.edu" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Online Programs'});">Online Programs</a></li>
+<li><a title="Dual Degree Programs" href="/academics/dual-degrees-and-graduate-programs-at-seton-hall.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Dual Degree Programs'});">Dual Degree Programs</a></li>
+<li><a title="Certificate Programs" href="/academics/certificate-programs.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Certificate Programs'});">Certificate Programs</a></li>
+<li><a title="Special Programs" href="/academics/education-specialist-programs.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Special Programs'});">Special Programs</a></li>
+<li><a title="STEM-Designated Programs" href="/stem-designated-programs.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'STEM-Designated Programs'});">STEM-Designated Programs</a></li>
+<li><a title="Summer Sessions" href="/summer/index.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Summer Sessions'});">Summer Sessions</a></li>
+<li><a title="International Programs" href="/international-programs/index.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'International Programs'});">International Programs</a></li>
+</ul>
+</div>
+<div class="medium-4 columns"><strong class="title">Schools and Colleges</strong>
+<ul>
+<li><a title="Arts and Sciences" href="/arts-sciences/index.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Arts and Sciences'});">Arts and Sciences</a></li>
+<li><a title="Business" href="/business/index.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Business'});">Business</a></li>
+<li><a title="Diplomacy and International Relations" href="/diplomacy/index.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Diplomacy and International Relations'});">Diplomacy and International Relations</a></li>
+<li><a title="Health and Medical Sciences" href="/health/index.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Health and Medical Services'});">Health and Medical Sciences</a></li>
+<li><a href="/human-development-culture-media/index.html" aria-label="Communication and the Arts mobile" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Communication and the Arts'});">Human Development, Culture, and Media</a></li>
+<li><a title="Law" href="https://law.shu.edu/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Law'});">Law</a></li>
+<li><a title="Nursing" href="/nursing/index.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Nursing'});">Nursing</a></li>
+<li><a title="Theology" href="/theology/index.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Theology'});">Theology</a></li>
+</ul>
+</div>
+<div class="medium-4 columns"><strong class="title">Additional Resources</strong>
+<ul>
+<li><a title="Experiential Learning mobile" href="/provost/experiential-learning/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Experiential Learning'});">Experiential Learning</a></li>
+<li><a title="Advising" href="/advising/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Advising'});">Advising</a></li>
+<li><a title="Faculty mobile" href="/profiles/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Faculty'});">Faculty</a></li>
+<li><a title="Departments mobile" href="/academics/schools-colleges-departments.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Departments'});">Departments</a></li>
+<li><a title="Centers and Institutes mobile" href="/academics/center-institutes.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Centers and Institutes'});">Centers and Institutes</a></li>
+<li><a title="Core Curriculum mobile" href="/core-curriculum/index.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'University Core Curriculum'});">Core Curriculum</a></li>
+<li><a title="University Libraries mobile" href="https://library.shu.edu/library" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'University Libraries'});">University Libraries</a></li>
+<li><a title="Academic Calendar mobile" href="/academics/academic-calendar.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Academic Calendar'});">Academic Calendar</a></li>
+<li><a title="Grants and Research" href="/grants-research-services/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Grants and Research'});">Grants and Research</a></li>
+<li><a title="Office of the Provost mobile" href="/provost/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Office of the Provost'});">Office of the Provost</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li><a title="Open Admissions menu" href="#">Admissions</a>
+<div class="mega-drop">
+<div class="row">
+<div class="medium-4 columns"><strong class="title">Undergraduate Students</strong>
+<ul>
+<li><a href="/undergraduate-admissions/" aria-label="Admissions Homepage" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Admissions Homepage'});">Admissions Homepage</a></li>
+<li><a href="/undergraduate-admissions/application-checklist.html#application-deadlines" aria-label="Applying as a Freshman" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Applying as a Freshman'});">Applying as a Freshman</a></li>
+<li><a href="/undergraduate-admissions/transfer/index.html" aria-label="Applying as a Transfer" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Applying as a Transfer'});">Applying as a Transfer</a></li>
+<li><a href="/undergraduate-admissions/scholarships.html" aria-label="Scholarships" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Scholarships'});">Scholarships</a></li>
+<li><a href="/undergraduate-admissions/visiting.html" aria-label="On-Campus and Virtual Events" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'On-Campus and Virtual Events'});">On-Campus and Virtual Events</a></li>
+<li><a href="/openhouse/" aria-label="Open House" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Open House'});">Open House</a></li>
+<li><a href="https://app.shu.edu/portal/campus-tour" aria-label="Campus Tours" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Campus Tours'});">Campus Tours (Offered Mon-Sat)</a></li>
+<li><a href="/undergraduate-admissions/find-a-counselor.html" aria-label="Find Your Counselor" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Find Your Counselor'});">Find Your Counselor</a></li>
+</ul>
+</div>
+<div class="medium-4 columns"><strong class="title">Graduate Students</strong>
+<ul>
+<li><a href="/graduate-affairs/index.html" aria-label="Graduate Affairs" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Graduate Affairs'});">Graduate Affairs</a></li>
+<li><a href="/academics/graduate-programs.html" aria-label="Graduate Programs" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Graduate Programs'});">Graduate Programs</a></li>
+<li><a href="/graduate-affairs/contact-us.html" aria-label="Contact Information" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Contact Information'});">Contact Information</a></li>
+<li><a href="/graduate-affairs/applying.html" aria-label="Start/Continue Your Application" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Start/Continue Your Application'});">Start/Continue Your Application</a></li>
+<li><a href="/graduate-affairs/graduate-financial-aid.html" aria-label="Financial Aid and Financing" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Financial Aid and Financing'});">Financial Aid and Financing</a></li>
+<li><a href="/student-services/services-for-graduate-students.html" aria-label="Services for Graduate Students" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Services for Graduate Students'});">Services for Graduate Students</a></li>
+</ul>
+</div>
+<div class="medium-4 columns"><strong class="title">International Students</strong>
+<ul>
+<li><a href="/undergraduate-admissions/international-and-esl-applicants.html" aria-label="Undergraduate Applicants" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Undergraduate Applicants'});">Undergraduate Applicants</a></li>
+<li><a href="/graduate-affairs/international-graduate-applicants.html" aria-label="Graduate Applicants" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Graduate Applicants'});">Graduate Applicants</a></li>
+<li><a href="/international-programs/international-students/incoming-f1-students.html" aria-label="F1 Visa Process" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'F1 Visa Process'});">F1 Visa Process</a></li>
+<li><a href="https://app.shu.edu/portal/international" aria-label="Meet with an International Undergraduate Admissions Counselor" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Meet with an International Undergraduate Admissions Counselor'});">Meet with an International Undergraduate Admissions Counselor</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li><a title="Open Catholic Mission menu" href="#">Catholic Mission</a>
+<div class="mega-drop">
+<div class="row">
+<div class="medium-4 columns"><strong class="title">Catholic Mission</strong>
+<ul>
+<li><a title="Mission and Ministry" href="/catholic-mission/index.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Mission and Ministry'});">Mission and Ministry</a></li>
+<li><a title="Priest Community" href="/catholic-mission/priest-community.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Priest Community'});">Priest Community</a></li>
+<li><a title="Catholic Studies" href="/catholic-mission/catholic-studies.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Catholic Studies'});">Catholic Studies</a></li>
+<li><a title="School of Theology" href="/theology/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'School of Theology'});">School of Theology</a></li>
+<li><a title="Catholic Intellectual Tradition" href="/catholic-intellectual-tradition/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Catholic Intellectual Tradition'});">Catholic Intellectual Tradition</a></li>
+</ul>
+</div>
+<div class="medium-4 columns"><strong class="title">Additional Resources</strong>
+<ul>
+<li><a title="Mass Schedule" href="/catholic-mission/mass-schedule.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Mass Schedule'});">Mass Schedule</a></li>
+<li><a title="Catholic Centers and Institutes" href="/catholic-mission/centers-institutes.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Centers and Institutes'});">Centers and Institutes</a></li>
+<li><a title="Archdiocese" href="/catholic-mission/archdiocese.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Archdiocese'});">Archdiocese</a></li>
+</ul>
+</div>
+<div class="medium-4 columns bordered"><a class="visual-link" title="Chapel Link" href="#"> <img src="/images/img15.jpg" alt="Chapel" /> </a></div>
+</div>
+</div>
+</li>
+<li><a title="Open Athletics menu" href="#">Athletics</a>
+<div class="mega-drop">
+<div class="row">
+<div class="medium-4 columns"><img src="/images/athletics-pirate-logo.jpg" alt="image description" /></div>
+<div class="medium-4 columns">
+<div class="text"><strong class="title">Seton Hall Pirates</strong>
+<ul>
+<li><a href="http://www.shupirates.com/">SHUPirates.com</a></li>
+</ul>
+<!-- social networks --></div>
+</div>
+<div class="medium-4 columns bordered"><strong class="title">Athletics Resources</strong>
+<ul>
+<li><a title="Schedules" href="https://shupirates.com/calendar" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Schedules'});">Schedules</a></li>
+<li><a title="Tickets" href="https://setonhalltix.com/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Tickets'});">Tickets</a></li>
+<li><a title="Pirate Blue" href="https://shupirates.com/sports/pirateblue" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Pirate Blue'});">Pirate Blue</a></li>
+<li><a title="Facilities" href="https://shupirates.com/facilities" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Facilities'});">Facilities</a></li>
+<li><a title="eSports and Gaming" href="/esports/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'eSports and Gaming'});">eSports and Gaming</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li><a title="Open Alumni menu" href="#">Alumni</a>
+<div class="mega-drop">
+<div class="row">
+<div class="medium-4 columns"><img src="/images/AlumniRelations-1.jpg" alt="True Blue" /></div>
+<div class="medium-4 columns bordered"><strong class="title">Alumni and Friends</strong>
+<ul>
+<li><a title="Alumni Home" href="https://advancement.shu.edu/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Almuni Home'});">Alumni Home</a></li>
+<li><a title="Alumni Directory" href="https://advancement.shu.edu/connect/alumni-directory/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Almuni Directory'});">Alumni Directory</a></li>
+<li><a title="Share Your News" href="https://advancement.shu.edu/connect/class-notes/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Share Your News'});">Share Your News</a></li>
+<li><a title="Benefits and Services" href="https://advancement.shu.edu/benefits/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Benefits and Services'});">Benefits and Services</a></li>
+<li><a title="E-Mail Accounts" href="https://advancement.shu.edu/alumni-email/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'E-mail Accounts'});">E-mail Accounts</a></li>
+<li><a title="Request a Transcript" href="/registrar/registrar-transcript-requests.html" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Request an Transcript'});">Request a Transcript</a></li>
+<li><a title="True Blue" href="https://advancement.shu.edu/pirate-pride/true-blue/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'True Blue'});">True Blue</a></li>
+</ul>
+</div>
+<div class="medium-4 columns"><strong class="title">Support Seton Hall</strong>
+<ul>
+<li><a title="Why Seton Hall" href="https://advancement.shu.edu/give/why-give/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Why Seton Hall?'});">Why Seton Hall?</a></li>
+<li><a title="Ways to Give" href="https://advancement.shu.edu/give/ways-to-give/" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Ways to Give'});">Ways to Give</a></li>
+</ul>
+<br /><a class="button" title="Give Now" role="button" href="https://advancement.shu.edu/give/give-online" onclick="dataLayer.push({ 'event': 'Top Navigation', 'eventCategory': 'Top Navigation', 'eventAction': 'click', 'eventLabel': 'Give Now'});">Give Now</a></div>
+</div>
+</div>
+</li>
+</ul>
+</nav></header><main id="main" class="not-found">
+<div id="cs_control_1385" class="cs_control CS_Element_Schedule">
+<div id="CS_Element_MainContainer" title="">
+<div id="gridRow_1_1_1385" class="cs_GridRow">
+<div id="gridCol_1_1_1_1_1385" class="cs_GridColumn">
+<div id="cs_control_73766" class="cs_control row">
+<div id="CS_Element_73671_73766" title="">
+<div id="gridRow_1_1_73766" class="cs_GridRow">
+<div id="gridCol_1_1_1_1_73766" class="cs_GridColumn">
+<div id="cs_control_73769" class="cs_control CS_Element_Textblock">
+<section>
+<div class="medium-12 columns transparent">
+<h1>Page Not Found. <br /><small>Did you step on the seal?</small></h1>
+<p>You may have come to a page that doesn't exist, we've broken something or you've stepped on the seal.</p>
+<p>Legend has it those who step on the seal may experience bad luck at Seton Hall... including broken links on our website.</p>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="cs_control_73768" class="cs_control row white-bg">
+<div id="CS_Element_73671_73768" title="">
+<div id="gridRow_1_1_73768" class="cs_GridRow">
+<div id="gridCol_1_1_1_1_73768" class="cs_GridColumn">
+<div id="cs_control_73772" class="cs_control medium-3 columns"><img src="/images/pirate_220.jpg" alt="Pirate Statue 220" width="220" height="220" /></div>
+<div id="cs_control_73773" class="cs_control CS_Element_Textblock">
+<section>
+<div class="medium-9 columns">
+<p><strong>Please <a id="/search.html|" href="/search.html">try using our search </a>or visiting the <a id="/index.html|" href="/index.html">Seton Hall Homepage</a></strong>... <span style="color: #7f7f7f;">and don't worry, legend also says touching the pirate's boot in front of the rec center will reverse any bad luck. Go Pirates!</span></p>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main><footer id="footer" aria-label="global-footer">
+<div class="row">
+<div class="medium-9 columns">
+<div class="row">
+<div class="medium-4 columns">
+<ul class="vcard">
+<li class="fn"><a title="Seton Hall University" href="/">Seton Hall University</a></li>
+<li class="street-address">400 South Orange Ave</li>
+<li><span class="locality">South Orange</span>, <span class="state">NJ</span> <span class="zip">07079</span></li>
+<li class="pn">(973) 761-9000</li>
+</ul>
+<div id="cs_control_14261" class="cs_control CS_Element_Textblock">
+<div><a class="CS_Textblock_Caption" href="/university-relations/privacy.html">Privacy Statements</a></div>
+</div>
+<div id="cs_control_415844" class="cs_control CS_Element_Textblock">
+<div><a class="CS_Textblock_Caption" href="/compliance/nondiscrimination-title-ix-statement.html">Nondiscrimination Statement and Title IX</a></div>
+</div>
+<div id="cs_control_60895" class="cs_control CS_Element_Textblock">
+<div><a class="CS_Textblock_Caption" href="/questions.html">Contact Us</a></div>
+</div>
+</div>
+<div class="medium-8 columns">
+<div class="footer-links">
+<div id="cs_control_13497" class="cs_control CS_Element_BulletedList"><!-- <h3 class="title"></h3> -->
+<ul class="resource-list">
+<li><a href="/student-services/" onclick="dataLayer.push({ 'event': 'Global Footer', 'eventCategory':'Global Footer','eventAction':'click','eventLabel':'Student Services' });">Student Services</a></li>
+<li><a href="/parents/" onclick="dataLayer.push({ 'event': 'Global Footer', 'eventCategory':'Global Footer','eventAction':'click','eventLabel':'Parents and Families' });">Parents and Families</a></li>
+<li><a href="/career-center/" onclick="dataLayer.push({ 'event': 'Global Footer', 'eventCategory':'Global Footer','eventAction':'click','eventLabel':'Career Center' });">Career Center</a></li>
+<li><a href="/technology/" onclick="dataLayer.push({ 'event': 'Global Footer', 'eventCategory':'Global Footer','eventAction':'click','eventLabel':'Technology' });">Technology</a></li>
+<li><a href="/university-relations/accessibility.html" onclick="dataLayer.push({ 'event': 'Global Footer', 'eventCategory':'Global Footer','eventAction':'click','eventLabel':'Web Accessibility' });">Web Accessibility</a></li>
+<li><a href="/visit/" onclick="dataLayer.push({ 'event': 'Global Footer', 'eventCategory':'Global Footer','eventAction':'click','eventLabel':'Visiting Campus' });">Visiting Campus</a></li>
+<li><a href="/public-safety/" onclick="dataLayer.push({ 'event': 'Global Footer', 'eventCategory':'Global Footer','eventAction':'click','eventLabel':'Public Safety' });">Public Safety</a></li>
+<li><a href="/disability-support-services/" onclick="dataLayer.push({ 'event': 'Global Footer', 'eventCategory':'Global Footer','eventAction':'click','eventLabel':'Disability Support Services' });">Disability Support Services</a></li>
+<li><a href="/public-safety/students-right-to-know.html" onclick="dataLayer.push({ 'event': 'Global Footer', 'eventCategory':'Global Footer','eventAction':'click','eventLabel':'Campus Security Report' });">Campus Security Report</a></li>
+<li><a href="/human-resources/employment/" onclick="dataLayer.push({ 'event': 'Global Footer', 'eventCategory':'Global Footer','eventAction':'click','eventLabel':'Employment' });">Employment</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="medium-3 columns">
+<div class="row">
+<div class="medium-12 columns">
+<h3 class="title">Follow #SetonHall</h3>
+</div>
+</div>
+<div class="row small-up-3 social-icons small-collapse">
+<div class="column column-block">
+<p class="text-right"><a title="Seton Hall University Facebook" href="https://www.facebook.com/setonhall"><span class="fab fa-facebook fa-2x" aria-hidden="true">&nbsp;</span></a></p>
+</div>
+<div class="column column-block">
+<p class="text-center"><a title="Seton Hall University Twitter" href="https://twitter.com/setonhall"><span class="fab fa-twitter-square fa-2x" aria-hidden="true">&nbsp;</span></a></p>
+</div>
+<div class="column column-block">
+<p class="text-left"><a title="Seton Hall University LinkedIn" href="https://www.linkedin.com/edu/seton-hall-university-18877"><span class="fab fa-linkedin-in fa-2x" aria-hidden="true">&nbsp;</span></a></p>
+</div>
+<div class="column column-block">
+<p class="text-right"><a title="Seton Hall University YouTube" href="https://www.youtube.com/user/setonhall"><span class="fab fa-youtube fa-2x" aria-hidden="true">&nbsp;</span></a></p>
+</div>
+<div class="column column-block">
+<p class="text-center"><a title="Seton Hall University Flickr" href="https://www.flickr.com/photos/setonhall"><span class="fab fa-flickr fa-2x" aria-hidden="true">&nbsp;</span></a></p>
+</div>
+<div class="column column-block">
+<p class="text-left"><a title="Seton Hall University Instagram" href="https://instagram.com/setonhall/"><span class="fab fa-instagram fa-2x" aria-hidden="true">&nbsp;</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</footer></div>
+</div>
+<script src="/_resources/js/frameworks.min.js"></script>
+<script src="/_resources/js/app.min.js"></script>
+<script>
+  dataLayer.push({ 'event': 'pageview', 'eventCategory': 'pageview', 'eventAction': 'error', 'eventLabel': '/404.htm?page=' + document.location.pathname + document.location.search + '&from=' + document.referrer });
+</script>
+</div><a id="de" rel="nofollow" href="https://a.cms.omniupdate.com/11/?skin=oucampus&amp;account=shu&amp;site=www&amp;action=de&amp;path=/_resources/errordocs/404.html" class="direct-edit-button"></a></body>
+
+</html>

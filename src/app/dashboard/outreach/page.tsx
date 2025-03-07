@@ -1,9 +1,27 @@
 "use client";
 
 import DashboardLayout from '@/components/dashboard/DashboardLayout';
-import { useState, FormEvent, ChangeEvent } from 'react';
+import { useState, FormEvent, ChangeEvent, useEffect } from 'react';
+import { getAllUniversities, University } from '@/data/universities';
+import Image from 'next/image';
 
 export default function OutreachPage() {
+  // Add state for universities
+  const [universities, setUniversities] = useState<University[]>([]);
+  const [selectedUniversity, setSelectedUniversity] = useState<University | null>(null);
+
+  // Load universities on component mount
+  useEffect(() => {
+    const allUniversities = getAllUniversities();
+    setUniversities(allUniversities);
+    
+    // Set default university (Seton Hall)
+    if (allUniversities.length > 0) {
+      const defaultUniversity = allUniversities.find(u => u.id === 'seton-hall') || allUniversities[0];
+      setSelectedUniversity(defaultUniversity);
+    }
+  }, []);
+
   // Add state for form inputs
   const [formData, setFormData] = useState({
     department: '',
@@ -13,6 +31,7 @@ export default function OutreachPage() {
     followupDate: '',
     notes: '',
     officerCount: '0', // Add officer count for quote generation
+    universityId: 'seton-hall', // Default university
   });
 
   // Add state for errors
@@ -23,6 +42,7 @@ export default function OutreachPage() {
     status: '',
     followupDate: '',
     officerCount: '', // Add error for officer count
+    universityId: '', // Add error for university
     // etc. for other fields if needed
   });
 
@@ -35,6 +55,12 @@ export default function OutreachPage() {
   const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+
+    // If university changed, update the selected university
+    if (name === 'universityId') {
+      const university = universities.find(u => u.id === value);
+      setSelectedUniversity(university || null);
+    }
 
     // Simple required-field check
     if (!value && (name === 'department' || name === 'contactPerson' || name === 'followupDate')) {
@@ -84,6 +110,45 @@ export default function OutreachPage() {
     return dueDate < today;
   };
 
+  // Function to generate a sample quote
+  const handleSeeSampleQuote = () => {
+    setIsGeneratingQuote(true);
+    setQuoteError('');
+
+    // Sample data
+    const sampleData = {
+      department: "Sample Police Department",
+      contactPerson: "Chief John Smith",
+      officerCount: "25",
+      universityId: formData.universityId // Use the selected university
+    };
+
+    // Call the API with sample data
+    fetch('/api/quotes/generate', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(sampleData),
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          setGeneratedQuote(data.quote);
+          setShowQuoteModal(true);
+        } else {
+          setQuoteError(data.message || 'Failed to generate sample quote. Please try again.');
+        }
+      })
+      .catch(error => {
+        console.error('Error generating sample quote:', error);
+        setQuoteError('An error occurred while generating the sample quote. Please try again.');
+      })
+      .finally(() => {
+        setIsGeneratingQuote(false);
+      });
+  };
+
   // Function to generate a quote
   const handleGenerateQuote = async () => {
     // Validate required fields for quote generation
@@ -94,6 +159,11 @@ export default function OutreachPage() {
 
     if (!formData.officerCount || parseInt(formData.officerCount) <= 0) {
       setQuoteError('Please enter a valid number of officers.');
+      return;
+    }
+
+    if (!formData.universityId) {
+      setQuoteError('Please select a university.');
       return;
     }
 
@@ -110,6 +180,7 @@ export default function OutreachPage() {
           department: formData.department,
           contactPerson: formData.contactPerson,
           officerCount: formData.officerCount,
+          universityId: formData.universityId
         }),
       });
 
@@ -348,6 +419,42 @@ export default function OutreachPage() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
+                  <label htmlFor="universityId" className="block text-sm font-medium text-gray-700 mb-1">
+                    Issuing University
+                  </label>
+                  <div className="flex items-center space-x-4">
+                    <select
+                      id="universityId"
+                      name="universityId"
+                      value={formData.universityId}
+                      onChange={handleInputChange}
+                      className="flex-1 p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                    >
+                      {universities.map(university => (
+                        <option key={university.id} value={university.id}>
+                          {university.name} - {university.school}
+                        </option>
+                      ))}
+                    </select>
+                    
+                    {/* Display university logo */}
+                    {selectedUniversity && (
+                      <div className="w-40 h-16 relative">
+                        <Image 
+                          src={selectedUniversity.logoPath}
+                          alt={`${selectedUniversity.name} logo`}
+                          fill
+                          style={{ objectFit: 'contain' }}
+                        />
+                      </div>
+                    )}
+                  </div>
+                  {formErrors.universityId && (
+                    <p className="mt-1 text-sm text-red-600">{formErrors.universityId}</p>
+                  )}
+                </div>
+                
+                <div>
                   <label htmlFor="officerCount" className="block text-sm font-medium text-gray-700 mb-1">
                     Number of Officers
                   </label>
@@ -363,25 +470,6 @@ export default function OutreachPage() {
                   {formErrors.officerCount && (
                     <p className="mt-1 text-sm text-red-600">{formErrors.officerCount}</p>
                   )}
-                </div>
-                
-                <div>
-                  <label htmlFor="preferredUniversity" className="block text-sm font-medium text-gray-700 mb-1">
-                    Preferred University
-                  </label>
-                  <select
-                    id="preferredUniversity"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-                  >
-                    <option value="">Select university</option>
-                    <option value="university1">University of Washington</option>
-                    <option value="university2">University of Michigan</option>
-                    <option value="university3">University of Texas</option>
-                    <option value="university4">University of Florida</option>
-                    <option value="university5">University of California</option>
-                    <option value="university6">University of New York</option>
-                    <option value="undecided">Undecided</option>
-                  </select>
                 </div>
               </div>
               
@@ -459,6 +547,14 @@ export default function OutreachPage() {
                   className="flex-1 bg-police-blue hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 >
                   {isGeneratingQuote ? 'Generating...' : 'Generate Quote'}
+                </button>
+                <button
+                  type="button"
+                  onClick={handleSeeSampleQuote}
+                  disabled={isGeneratingQuote}
+                  className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                >
+                  See Sample Quote
                 </button>
               </div>
             </form>
