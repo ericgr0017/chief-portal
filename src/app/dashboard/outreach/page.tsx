@@ -842,7 +842,7 @@ export default function OutreachPage() {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-xl p-6 max-w-4xl w-full max-h-[90vh] overflow-y-auto">
             <div className="flex justify-between items-center mb-4">
-              <h2 className="text-xl font-bold text-seton-hall-blue">Generated Quote</h2>
+              <h2 className="text-xl font-bold text-seton-hall-blue">Quote</h2>
               <button 
                 onClick={() => setShowQuoteModal(false)}
                 className="text-gray-500 hover:text-gray-700"
@@ -853,20 +853,19 @@ export default function OutreachPage() {
               </button>
             </div>
             
-            <div className="bg-white border border-seton-hall-gray rounded-lg p-8 mb-4">
-              {/* University Logo */}
-              {selectedUniversity && (
-                <div className="flex justify-center mb-6">
-                  <div className="w-80 h-24 relative">
-                    <Image 
-                      src={selectedUniversity.logoPath}
-                      alt={`${selectedUniversity.name} logo`}
-                      fill
-                      style={{ objectFit: 'contain' }}
-                    />
-                  </div>
+            <div className="bg-white border border-gray-300 rounded-lg p-8 mb-4">
+              {/* Logo Header - The logo should be approximately 200x80px */}
+              <div className="flex justify-center mb-8">
+                <div className="w-[200px] h-[80px] relative">
+                  <Image 
+                    src="/images/universities/seton-hall-logo.png"
+                    alt="Seton Hall University logo"
+                    fill
+                    style={{ objectFit: 'contain' }}
+                    priority
+                  />
                 </div>
-              )}
+              </div>
               
               {/* Quote Content */}
               <div className="font-serif">
@@ -888,6 +887,12 @@ export default function OutreachPage() {
                 className="bg-seton-hall-blue hover:bg-opacity-90 text-white font-medium py-2 px-4 rounded"
               >
                 Download Quote
+              </button>
+              <button 
+                onClick={() => window.print()}
+                className="bg-seton-hall-blue hover:bg-opacity-90 text-white font-medium py-2 px-4 rounded"
+              >
+                Print Quote
               </button>
             </div>
           </div>

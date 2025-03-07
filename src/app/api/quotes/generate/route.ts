@@ -30,7 +30,7 @@ export async function POST(request: NextRequest) {
   });
   
   // Generate a quote number
-  const quoteNumber = `${university.id.toUpperCase()}-${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(Math.floor(Math.random() * 10000)).padStart(4, '0')}`;
+  const quoteNumber = `SHU-${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(Math.floor(Math.random() * 10000)).padStart(4, '0')}`;
   
   // Calculate expiration date (30 days from now)
   const expirationDate = new Date(today);
@@ -41,68 +41,58 @@ export async function POST(request: NextRequest) {
     day: 'numeric'
   });
 
-  // Format the university address
-  const formattedAddress = `${university.address.street}${university.address.unit ? ', ' + university.address.unit : ''}
-${university.address.city}, ${university.address.state} ${university.address.zip}`;
-
-  // Example template (you can store this in a DB or a file):
+  // Create a professional quote template
   const quoteTemplate = `
-OFFICIAL PRICE QUOTATION
+QUOTE
 
-Quote Number: ${quoteNumber}
 Date: ${formattedDate}
+Quote #: ${quoteNumber}
 Valid Until: ${formattedExpirationDate}
 
 FROM:
-${university.name}
-${university.school}
-${formattedAddress}
+Seton Hall University
+Stillman School of Business
+511 South Orange Avenue, #2140
+Newark, New Jersey 07103
 ${university.contactPhone} | ${university.contactEmail}
 
 TO:
 {{contactPerson}}
 {{department}}
 
+Subject: Certificate Program: Operational Readiness for Police Officers - Practical Strategies for Addressing Opioid Use Disorder and Co-occurring Conditions
+
 Dear {{contactPerson}},
 
-Thank you for your interest in our "Operational Readiness for Police Officers: 
-Practical Strategies for Addressing Opioid Use Disorder" training program.
+Thank you for your interest in our certificate program. We are pleased to provide you with the following quotation:
 
-We are pleased to provide you with the following quotation:
+ITEM DESCRIPTION                                                   QTY    UNIT PRICE    AMOUNT
+-------------------------------------------------------------------------------
+Certificate Program: Operational Readiness for Police Officers -   {{officerCount}}    $${costPerOfficer}.00    ${{totalCost}}.00
+Practical Strategies for Addressing Opioid Use Disorder and 
+Co-occurring Conditions
 
-PROGRAM DETAILS
---------------
-Program:       Operational Readiness for Police Officers
-Duration:      2-day intensive training (16 hours total)
-Location:      On-site at your department or preferred facility
-Certification: All officers will receive official certification upon completion
-Provider:      ${university.name}, ${university.school}
+                                                                   SUBTOTAL:    ${{totalCost}}.00
+                                                                   TAX:         $0.00
+                                                                   TOTAL:       ${{totalCost}}.00
 
-PRICING BREAKDOWN
----------------
-Number of Officers:    {{officerCount}}
-Cost per Officer:      $${costPerOfficer}.00
-                                                 ----------------------
-                                      SUBTOTAL:  ${{totalCost}}.00
-                                      DISCOUNT:  $0.00
-                                         TOTAL:  ${{totalCost}}.00
-
-FUNDING INFORMATION
------------------
-This program qualifies for 100% funding through Opioid Settlement Funds,
-including officer overtime costs. Our team will assist with all necessary
-documentation for funding approval.
-
-PROGRAM BENEFITS
---------------
+PROGRAM DETAILS:
+• 2-day intensive training (16 hours total)
+• On-site at your department or preferred facility
+• All officers will receive official certification upon completion
 • Evidence-based training on opioid response protocols
 • Hands-on experience with naloxone administration
 • De-escalation techniques for individuals in crisis
 • Community resource coordination strategies
 • Post-incident support and officer wellness components
 
-To accept this quotation, please contact us at ${university.contactEmail}
-or call ${university.contactPhone}.
+TERMS & CONDITIONS:
+Subject to Receipt of Opioid Settlement Disbursement Funding.
+
+This program qualifies for 100% funding through Opioid Settlement Funds, including officer overtime costs. 
+Our team will assist with all necessary documentation for funding approval.
+
+To accept this quotation, please contact us at ${university.contactEmail} or call ${university.contactPhone}.
 
 This quote is valid for 30 days from the date of issue.
 
@@ -110,8 +100,8 @@ Sincerely,
 
 
 Dr. Joyce Strawser
-Dean, ${university.school}
-${university.name}
+Dean, Stillman School of Business
+Seton Hall University
 `;
 
   // Build the data object that matches your placeholders in the template
@@ -119,10 +109,7 @@ ${university.name}
     contactPerson: formData.contactPerson ?? 'Name',
     department: formData.department ?? 'Department',
     officerCount: (formData.officerCount ?? '0').toString(),
-    totalCost,
-    date: formattedDate,
-    quoteNumber: quoteNumber,
-    expirationDate: formattedExpirationDate
+    totalCost
   };
 
   // Fill the template
