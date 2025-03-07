@@ -49,6 +49,10 @@ module.exports = {
           silver: '#C0C0C0',
           badge: '#B8860B',
         },
+        'seton-hall': {
+          blue: '#003366',
+          gray: '#8A8D8F',
+        },
       },
       fontFamily: {
         sans: ['var(--font-inter)'],

@@ -842,7 +842,7 @@ export default function OutreachPage() {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-xl p-6 max-w-4xl w-full max-h-[90vh] overflow-y-auto">
             <div className="flex justify-between items-center mb-4">
-              <h2 className="text-xl font-bold text-gray-800">Generated Quote</h2>
+              <h2 className="text-xl font-bold text-seton-hall-blue">Generated Quote</h2>
               <button 
                 onClick={() => setShowQuoteModal(false)}
                 className="text-gray-500 hover:text-gray-700"
@@ -853,7 +853,7 @@ export default function OutreachPage() {
               </button>
             </div>
             
-            <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-8 mb-4">
+            <div className="bg-white border border-seton-hall-gray rounded-lg p-8 mb-4">
               {/* University Logo */}
               {selectedUniversity && (
                 <div className="flex justify-center mb-6">
@@ -869,9 +869,11 @@ export default function OutreachPage() {
               )}
               
               {/* Quote Content */}
-              <pre className="whitespace-pre-wrap font-mono text-sm text-blue-900 overflow-x-auto">
-                {generatedQuote}
-              </pre>
+              <div className="font-serif">
+                <pre className="whitespace-pre-wrap font-serif text-sm text-seton-hall-blue">
+                  {generatedQuote}
+                </pre>
+              </div>
             </div>
             
             <div className="flex justify-end space-x-3">
@@ -883,7 +885,7 @@ export default function OutreachPage() {
               </button>
               <button 
                 onClick={handleDownloadQuote}
-                className="bg-police-blue hover:bg-blue-700 text-white font-medium py-2 px-4 rounded"
+                className="bg-seton-hall-blue hover:bg-opacity-90 text-white font-medium py-2 px-4 rounded"
               >
                 Download Quote
               </button>
