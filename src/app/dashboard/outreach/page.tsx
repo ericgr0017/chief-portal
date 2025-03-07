@@ -202,10 +202,23 @@ export default function OutreachPage() {
 
   // Function to download the quote as a text file
   const handleDownloadQuote = () => {
+    if (!selectedUniversity) return;
+    
+    // Create a formatted quote with university name
+    const formattedQuote = generatedQuote;
+    
+    // Create the file
     const element = document.createElement('a');
-    const file = new Blob([generatedQuote], { type: 'text/plain' });
+    const file = new Blob([formattedQuote], { type: 'text/plain' });
     element.href = URL.createObjectURL(file);
-    element.download = `Quote_${formData.department.replace(/\s+/g, '_')}_${new Date().toISOString().split('T')[0]}.txt`;
+    
+    // Format the filename with university name and department
+    const universityName = selectedUniversity.name.replace(/\s+/g, '_');
+    const departmentName = formData.department.replace(/\s+/g, '_') || 'Department';
+    const dateStr = new Date().toISOString().split('T')[0];
+    
+    element.download = `Quote_${universityName}_${departmentName}_${dateStr}.txt`;
+    
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
@@ -827,7 +840,7 @@ export default function OutreachPage() {
       {/* Quote Modal */}
       {showQuoteModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg shadow-xl p-6 max-w-2xl w-full max-h-[80vh] overflow-y-auto">
+          <div className="bg-white rounded-lg shadow-xl p-6 max-w-4xl w-full max-h-[90vh] overflow-y-auto">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-bold text-gray-800">Generated Quote</h2>
               <button 
@@ -840,7 +853,22 @@ export default function OutreachPage() {
               </button>
             </div>
             
-            <div className="bg-gray-50 p-4 rounded-lg mb-4 whitespace-pre-wrap font-mono text-sm">
+            <div className="bg-white border border-gray-300 rounded-lg p-8 mb-4 whitespace-pre-wrap font-mono text-sm">
+              {/* University Logo */}
+              {selectedUniversity && (
+                <div className="flex justify-center mb-6">
+                  <div className="w-80 h-24 relative">
+                    <Image 
+                      src={selectedUniversity.logoPath}
+                      alt={`${selectedUniversity.name} logo`}
+                      fill
+                      style={{ objectFit: 'contain' }}
+                    />
+                  </div>
+                </div>
+              )}
+              
+              {/* Quote Content */}
               {generatedQuote}
             </div>
             
